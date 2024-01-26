@@ -1,0 +1,390 @@
+/* Header */
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    background-color: #252626;
+    text-align: right;
+    padding: 25px;
+    font-size: medium;
+}
+
+nav li {
+    display: inline;
+    margin-right: 35px;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* About me */
+
+.float-left {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.about-content {
+    overflow: hidden;
+    padding: 20px; 
+    text-align: center;
+    position: relative;
+}
+
+#about h2 {
+    color: #333; 
+}
+
+#about summary {
+    color: #666; 
+    font-size: 24px; 
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/*End of about me*/
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    margin: 20px;
+}
+
+/* Contacts */
+#contact {
+    background-color: #ecf0f1;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-details {
+    background-color: #fff;
+    border: 1px solid #962424;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 10px;
+    display:inline-block;
+}
+
+.contact-details a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.contact-details a:hover {
+    color: #6f1111;
+}
+
+.fas,
+.far {
+    margin-right: 5px;
+    color: #327b39;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+
+.qform {
+    background-color: #272424;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+.qform label {
+    display: block;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+.qform input,
+.qform textarea {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ce7676;
+    border-radius: 40px;
+    color: black; /* Change text color to black */
+    margin-bottom: 15px;
+}
+
+.qform button {
+    background-color: #18191a;
+    color: #efe9e9;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.qform button:hover {
+    background-color: #247138;
+}
+
+
+/* Projects */
+#projects {
+    background-color: #ecf0f1;
+    padding: 40px;
+    text-align: center;
+}
+
+.project-table {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.project-table th,
+.project-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.project-table th {
+    background-color: gray;
+    color: white;
+}
+
+.project-table a {
+    color: #333;
+    text-decoration: none;
+}
+
+.project-table a:hover {
+    color: #3498db;
+}
+
+h2 {
+    color: #0e0e0e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Audio and Video */
+
+.column-layout {
+    column-count: 2; 
+    column-gap: 5px; 
+  }
+
+#audio,
+#video {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#audio audio,
+#video video {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Certifications*/
+#certifications {
+    background-color: #f9f9f95b;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  figure {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  figcaption {
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    width: "auto";
+    background-color: rgba(0, 0, 0, 1.0);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  figure:hover {
+    transform: scale(1.1);
+  }
+  
+  figure:hover figcaption {
+    opacity: 1;
+  }
+
+/* Footer */
+.footer {
+    margin-top: 0%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.f_icon img {
+    border-radius: 35px;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* FOR  (768px) */*/
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header ul {
+        padding: 15px;
+    }
+
+    nav li {
+        margin-right: 15px;
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+
+    #about summary {
+        font-size: 16px;
+        /* margin-top: 50px; */
+    }
+
+    .project-table th,
+    .project-table td {
+        padding: 10px;
+    }
+
+    .qform label,
+    .qform input,
+    .qform textarea {
+        font-size: 16px;
+    }
+
+    .qform button {
+        padding: 12px 25px;
+    }
+
+    .gallery figure {
+        margin: 5px;
+    }
+
+    figcaption {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .f_icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* FOR  (350 – 365px) */
+@media only screen and  (min-width: 280px) and (max-width: 400px){
+    header ul {
+        padding: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .about-content {
+        padding: 8px;       
+    }
+
+    .about-content::after{
+        clear: both;
+    }
+
+    #about summary {
+        font-size: 18px;
+        /* margin-top: 40px; */
+        /* overflow: visible; */
+    }
+
+    .project-table th,
+    .project-table td {
+        padding: 8px;
+    }
+
+    .qform label,
+    .qform input,
+    .qform textarea {
+        font-size: 14px;
+    }
+
+    .qform button {
+        padding: 10px 20px;
+    }
+
+    .gallery figure {
+        margin: 3px;
+    }
+
+    figcaption {
+        padding: 3px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .f_icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .column-layout {
+        column-count: 1; 
+        column-gap: 5px; 
+    }
+}
