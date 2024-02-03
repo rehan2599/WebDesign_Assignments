@@ -3,27 +3,33 @@
 <!-- Also read chapter 9 from slides - Regular Expressions -->
 
 <html>
+
 <head>
 	<title>Table CheckList</title>
 	<link rel="stylesheet" type="text/css" href="table.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	
+
 </head>
+
 <body>
+	<h1 id="name">Full Name: Khan Rehan Parvez</h1>
+	<h2 id="nuid">NUID: 002837350</h2>
 	<table id="myTable">
 		<tr>
 			<th></th>
 			<th>STUDENT</th>
 			<th>ADVISOR</th>
-			<th>AWARD<br/>STATUS</th>
+			<th>AWARD<br />STATUS</th>
 			<th>SEMESTER</th>
 			<th>TYPE</th>
 			<th>BUDGET<br />#</th>
 			<th>PERCENTAGE</th>
 			<th>DELETE</th>
+			<th>EDIT</th>
 		</tr>
 		<tr>
-			<td><input type="checkbox" /><br /><br /><img src="down.png" width="25px" /></td>
+			<td><input type="checkbox" /><br /><br /><img onClick="displayDetails(this)" src="down.png" width="25px" />
+			</td>
 			<td>Student 1</td>
 			<td>Teacher 1</td>
 			<td>Approved</td>
@@ -32,18 +38,22 @@
 			<td>12345</td>
 			<td>100%</td>
 			<td></td>
+			<td></td>
 		</tr>
-		<tr class="dropDownTextArea"><td colspan="8">
-			Advisor:<br /><br />
-			Award Details<br />
-			Summer 1-2014(TA)<br />
-			Budget Number: <br />
-			Tuition Number: <br />
-			Comments:<br /><br /><br />
-			Award Status:<br /><br /><br />
-		</td></tr>
-		<tr bgcolor="orange">
-			<td><input type="checkbox" checked/><br /><br /><img src="down.png" width="25px" /></td>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor:<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" /><br /><br /><img onClick="displayDetails(this)" src="down.png" width="25px" />
+			</td>
 			<td>Student 2</td>
 			<td>Teacher 2</td>
 			<td>Approved</td>
@@ -52,18 +62,22 @@
 			<td>23456</td>
 			<td>100%</td>
 			<td><button>Delete</button></td>
+			<td><button>Edit</button></td>
 		</tr>
-		<tr class="dropDownTextArea"><td colspan="8">
-			Advisor:<br /><br />
-			Award Details<br />
-			Summer 1-2014(TA)<br />
-			Budget Number: <br />
-			Tuition Number: <br />
-			Comments:<br /><br /><br />
-			Award Status:<br /><br /><br />
-		</td></tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor:<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
 		<tr>
-			<td><input type="checkbox" /><br /><br /><img src="down.png" width="25px" /></td>
+			<td><input type="checkbox" /><br /><br /><img onClick="displayDetails(this)" src="down.png" width="25px" />
+			</td>
 			<td>Student 3</td>
 			<td>Teacher 3</td>
 			<td>Approved</td>
@@ -72,25 +86,29 @@
 			<td>34567</td>
 			<td>100%</td>
 			<td></td>
+			<td></td>
 		</tr>
-		<tr class="dropDownTextArea"><td colspan="8">
-			Advisor:<br /><br />
-			Award Details<br />
-			Summer 1-2014(TA)<br />
-			Budget Number: <br />
-			Tuition Number: <br />
-			Comments:<br /><br /><br />
-			Award Status:<br /><br /><br />
-		</td></tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor:<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
 	</table>
 
 	<br /><br />
-	
+
 	<button id="button">SUBMIT SELECTED AWARDS</button>
-	<button id="add">Add New Student</button>
+	<button id="add" onClick="insert()">Add New Student</button>
 
 	<nav class="socialmediaicons"></nav>
 	<script src="script.js"></script>
-	
+
 </body>
+
 </html>
