@@ -1,0 +1,31 @@
+
+$primary-color: #213032;
+$secondary-color: #97a2a3;
+$background-color: #182f32;
+$title-color: #edff;
+
+$theme-colors: (
+  primary: #314e52,
+  secondary: #97a2a3,
+);
+
+//font
+$font-family: 'Josefin Sans', sans-serif;
+
+//footer variable
+$footer-background: #213032;
+$footer-text-color: #97a2a3;
+$footer-heading-font-size: 25px;
+
+$font-size-preference: 'normal';
+
+// Custom Properties in Root
+:root {
+    --primary-color: #213032;
+    --secondary-color: #97a2a3;
+  }
+
+//  Functions
+@function color-lighten($color, $amount) {
+    @return lighten($color, $amount);
+  }

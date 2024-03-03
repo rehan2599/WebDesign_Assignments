@@ -1,0 +1,82 @@
+
+@import '../variables';
+@import '../mixins';
+
+
+// Number of columns can be adjusted dynamically in grid
+$num-columns: 4;
+
+// Categories section styles
+.categories {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #314e52;
+
+    h2 {
+        color: $title-color;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+   
+    .box {
+        display: grid;
+        grid-template-columns: repeat(#{$num-columns}, 1fr); //interpolation
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ca-card {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        border: 5px solid #ccc;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background-color: #edffef;
+            color: $primary-color;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        &:hover {
+            .content {
+                opacity: 1;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: map-get($theme-colors, primary); //map
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            @include button-styles;
+            position: relative;
+        }
+    }
+}

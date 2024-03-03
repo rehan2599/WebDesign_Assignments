@@ -1,0 +1,59 @@
+
+@import '../variables';
+@import '../mixins';
+
+// Contact section styles
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: $background-color;
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px;
+        text-align: center;
+        color: #edffef;
+        font-size: 25px;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #edffef;
+        }
+
+        form {
+            text-align: center;
+
+            label,
+            input,
+            textarea,
+            button {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            label {
+                text-align: left;
+                color: #edffef;
+            }
+
+            input,
+            textarea {
+                padding: 8px;
+            }
+
+            button {
+                @include button-styles;
+            }
+        }
+
+        p {
+            padding: 15px;
+        }
+    }
+}

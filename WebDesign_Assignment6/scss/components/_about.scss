@@ -1,0 +1,50 @@
+
+@import '../variables';
+@import '../mixins';
+
+// About section styles
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: var(--primary-color);
+    
+
+    h2 {
+        color: $title-color;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 1130px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        align-items: center;
+    }
+   
+    img {
+        height: auto;
+        width: 430px;
+        border-radius: 20px 0 20px 0;
+        margin-right: 430px / 6; //operator
+    }
+
+    .about-text {
+        width: 100%;
+
+        p {
+            @extend %text-common;
+            color: var(--secondary-color);
+            // letter-spacing: 1px;
+            // line-height: 32px;
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Import variables
+@import 'variables';
+
+// Import mixins
+@import 'mixins';
+
+// Import partial SCSS files
+@import 'reset';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/content';
+@import 'components/about';
+@import 'components/recipe';
+@import 'components/categories';
+@import 'components/contact';
+@import 'components/footer';

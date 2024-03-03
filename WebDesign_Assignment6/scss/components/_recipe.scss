@@ -1,0 +1,85 @@
+
+@import '../variables';
+@import '../mixins';
+
+// Recipe section styles
+.recipe {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #213032;
+
+    h2 {
+        color: $primary-color;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #edffef;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background-color: #edffef;
+            color: $primary-color;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        &:hover {
+            .content {
+                opacity: 1;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: $primary-color;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            @include button-styles;
+            position: relative;
+        }
+    }
+}

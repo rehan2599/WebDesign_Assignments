@@ -1,0 +1,33 @@
+
+@import '../variables';
+
+// Content styles
+.content {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+
+    h1 {
+        color: $primary-color;
+        font-size: 75px;
+        margin: 20px 0;
+    }
+
+    h3 {
+        color: #edffef;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        color: #edffef;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .button {
+        @include button-styles;
+        position: absolute;
+    }
+}

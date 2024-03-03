@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="/images/favicon.png">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Product Management Hub</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> RK Recipes</title>
+</head>
 
-    <body>
-        <header class="showcase">
-            <div class="container">
-                <nav>
-                    <h1 class="logo">Product Hub</h1>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="about.html">Learn More</a></li>
-                        <li><a href="#">Services</a></li>
-                    </ul>
-                </nav>
-
-                <div class="showcase-content">
-                    <div>
-                        <h1>Welcome to the PM Hub</h1>
-                        <p class="my-1">
-                            Embark on a transformative product management journey with us. 
-                            Empower your teams, enhance collaboration, 
-                            and deliver successful products. 
-                            <br><br>Get started today!
-                        </p>
-                        <a href="about.html" class="btn-primary">Learn More</a>
-                        <a href="#" class="btn-secondary">Sign Up</a>
-                    </div>
-                    <img src="images/business-meeting.png" />
-                </div>
-            </div>
-        </header>
-        <section class="explore">
-            <br>
-            <br>
-            <br>
-            <h2>What we do?</h2>
-            
+<body>
+    <header>
+        <div class="logo">RK Recipes</div>
+        <div class="nav-bar">
             <ul>
-                <li>
-                    <strong>Idea Generation and Planning:</strong> Kickstart your product journey 
-                    with robust ideation tools and strategic planning features. 
-                    <br>Collaborate on defining and refining product concepts to align
-                    with your organizational goals.
-                </li>
-                <li>
-                    <strong>Requirements Management:</strong> Clearly document and organize product requirements, ensuring everyone on your team has a crystal-clear understanding of the features, functionalities, and objectives of your product.
-                </li>
-                <li>
-                    <strong>Real-Time Collaboration:</strong> Our platform fosters seamless communication and collaboration among cross-functional teams. Engage in discussions, share insights, and keep everyone in the loop with real-time updates.
-                </li>
-                <li>
-                    <strong>Task and Project Management:</strong> Stay on top of project timelines, milestones, and tasks. Our platform simplifies project management, allowing you to monitor progress and ensure that your team is always moving forward.
-                </li>
-                <li>
-                    <strong>Integration with Development Tools:</strong> Bridge the gap between product management and development teams by integrating with coding and development tools. Translate requirements into actionable tasks and monitor progress effortlessly.
-                </li>
-            </ul>
-            
-            <br>
-                Below video will help you understand our work style:
-                <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/88ZfjnDOmp4?si=mJJ26VjWAhh0lPFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
                 
-                <br>
-            <br>
-            <br>
-            <br>
-        </section>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="content">
+            <h4>Unleash Your Culinary Passion</h4>
+            <h1>Discover Taste Sensations</h1>
+            <h3>Elevate Your Cooking Game</h3>
+            <div class="button">Start Cooking</div>
+        </div>
+    </div>
+    <!----About Section Start---------------------------------->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="main">
+            <img src="images/20 Indian Thali Ideas.jfif" alt="">
+            <div class="about-text">
+                <p>Welcome to our recipe website, where culinary inspiration meets delicious creations! Whether you're a
+                    seasoned chef or a passionate home cook, we are here to ignite your taste buds and guide you on a
+                    delightful culinary journey. Our extensive collection of recipes covers a wide range of cuisines,
+                    from comforting classics to innovative fusion dishes. Each recipe is thoughtfully crafted, tested,
+                    and presented with step-by-step instructions, ensuring that even the novice cook can create
+                    extraordinary meals. We believe that cooking is an art form that brings people together, and our
+                    goal is to empower you to explore your culinary creativity and make every meal a masterpiece. So
+                    come on in, explore our diverse recipe collection, and let's embark on a delightful gastronomic
+                    adventure together!</p>
 
-        <footer class="footer">
-            
-            <p>Rehan Khan Copyrights 2024</p>
-        </footer>
-    </body>
+            </div>
+        </div>
+    </section>
 
-    
+    <!------------contact section-------------------------->
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 Main Street, city,city,country</p>
+            <p><strong>Phone:</strong>1234567890</p>
+            <p><strong>Email:</strong>info@example.com</p>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"  required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+<footer>
+    <div class="social-icons">
+        <a href="#" class="social-icon"> <i class="fab fa-facebook"></i> </a>
+        <a href="#" class="social-icon"> <i class="fab fa-twitter"></i> </a>
+        <a href="#" class="social-icon"> <i class="fab fa-instagram"></i> </a>
+    </div>
+    <h5>CopyRight © 2023 By Rehan Khan </h5>
+</footer>
+</body>
 
 </html>

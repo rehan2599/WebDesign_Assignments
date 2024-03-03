@@ -1,0 +1,37 @@
+
+@import '../variables';
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    .social-icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        color: #97a2a3;
+        text-align: center;
+        line-height: 40px;
+        @include adjust-font-size('h1'); //use of conditional mixin
+        // font-size: 38px;
+
+        &:hover {
+            color: #314e52;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    padding: 20px 0;
+    background: $footer-background;
+
+    h5 {
+        font-size: $footer-heading-font-size;
+        margin-top: 10px;
+        text-align: center;
+        color: $footer-text-color;
+    }
+}
