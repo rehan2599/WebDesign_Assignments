@@ -1,41 +1,47 @@
-Book Haven Website Documentation
-Overview
-This documentation provides a brief overview of the "Book Haven" website, outlining the implemented features and styling using SCSS.
+# Product Management Hub
 
-Features:
-Home Page (index.html)
--Header (class="showcase"):
-    Logo and navigation links.
-    Flexbox for alignment.
--Showcase Content:
-    Dynamic background color using SCSS mixins.
-    Responsive design with media queries.
--Explore Section (class="explore"):
-    List of recommended reading blogs.
-    Embedded YouTube video for book reviews.
-    SCSS styles for links and hover effects.
--Footer (class="footer"):
-    Copyright information.
-    Styled with SCSS for background and text color.
+Welcome to the Product Management Hub! This website is designed to empower your teams, enhance collaboration, and streamline product management processes.
 
-About Page (about.html)
--Header (class="header"):
-    Similar structure to the home page header.
-    Navigation links with hover effects.
--About Content (class="about-content"):
-    Book corner section with a list of recommended books.
-    Table for book details.
-    SCSS styling for text color and table borders.
+## Features Implemented
 
-Styles (style.scss)
--Variables (config.scss):
-    Colors, font stack, and spacing variables.
--Utilities (utilities.scss):
-    Container class for max-width and padding.
--Buttons (_buttons.scss):
-    Button style with SCSS placeholders and extends.
--Mobile Styles (mobile.scss):
-    Media query for responsive design adjustments.
+### 1. Navigation
 
-Conclusion
-The "Book Haven" website showcases CSS Grid, Flexbox, and SCSS features with a clean and organized structure. Responsive design ensures a seamless user experience. Explore the website and delve into the world of timeless tales!
+- **Header (index.html):**
+  - Logo and navigation links.
+  - Responsive design with a collapsible navigation menu on smaller screens.
+
+### 2. Showcase Content
+
+- **Showcase Content (index.html):**
+  - Welcome message and introduction to the PM Hub.
+  - Call-to-action buttons linking to the "Learn More" page and a signup option.
+
+### 3. Explore Section
+
+- **Explore Section (index.html):**
+  - Descriptive list of services offered by the PM Hub.
+  - Embedded YouTube video showcasing the work style of the platform.
+
+### 4. Real-Time Collaboration
+
+- **Explore Section (index.html):**
+  - Description of real-time collaboration features.
+  - Mention of seamless communication and collaboration among cross-functional teams.
+
+### 5. Task and Project Management
+
+- **Explore Section (index.html):**
+  - Description of task and project management features.
+  - Emphasis on staying on top of project timelines and milestones.
+
+### 6. Integration with Development Tools
+
+- **Explore Section (index.html):**
+  - Description of integration with development tools.
+  - Bridging the gap between product management and development teams.
+
+### 7. Footer
+
+- **Footer (index.html):**
+  - Copyright information.
+
