@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
 </head>
 <body>
     <div class="container">
-        <label id="timeLabel">00:00:00</label>
-        <input type="date" id="datePicker" >
-        <div class="button-container">
+        <h2>Stopwatch</h2>
+        <div class="timer-container">
+            <label id="timer">00:00:00</label>
+        </div>
+        <div class="btn-container">
             <button id="startBtn">Start</button>
             <button id="stopBtn">Stop</button>
             <button id="resetBtn">Reset</button>
+        </div>
+        <div class="date-container">
+            <input type="date" id="datePicker">
         </div>
     </div>
 
