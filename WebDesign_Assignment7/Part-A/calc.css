@@ -1,0 +1,47 @@
+.form-group{
+    /* margin-left:150px;
+    margin-right:150px;
+    margin-top:25px; */
+    margin-bottom:75px;
+
+}
+
+.form-group1 {
+margin-bottom: 75px;
+text-align: initial;
+margin-left: 1.5%;
+}
+
+#username{
+margin-top:5px;
+margin-left: 20px;
+margin-right:20px;
+/* background-color:navy; */
+color:navy;
+text-align: right;
+font-size: larger;
+}
+
+
+
+#form{
+background-color: #16437e;
+}
+
+center {
+    background: #abe5f1;
+    margin: 15%;
+    margin-top: 0%;
+    padding: 5%;
+    padding-top: 3%;
+}
+
+.form-control {
+    width: 20% !important;
+    margin-right: 90%;
+}
+
+h2 {
+    padding-top: 15px;
+    color: white;
+}
