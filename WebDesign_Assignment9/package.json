@@ -1,0 +1,11 @@
+{
+  "name": "job-portal",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"cd backend && npm start\" \"cd frontend && npm start\"",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
